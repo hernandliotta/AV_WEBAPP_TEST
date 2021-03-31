@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="obtenerCiudades" type="tns:obtenerCiudades" />
+
+<xs:element name="obtenerCiudadesResponse" type="tns:obtenerCiudadesResponse" />
+
+<xs:element name="obtenerClimaHoy" type="tns:obtenerClimaHoy" />
+
+<xs:element name="obtenerClimaHoyResponse" type="tns:obtenerClimaHoyResponse" />
+
+<xs:element name="obtenerClimaSemana" type="tns:obtenerClimaSemana" />
+
+<xs:element name="obtenerClimaSemanaResponse" type="tns:obtenerClimaSemanaResponse" />
+
+<xs:element name="obtenerPaises" type="tns:obtenerPaises" />
+
+<xs:element name="obtenerPaisesResponse" type="tns:obtenerPaisesResponse" />
+
+<xs:element name="validarUsuario" type="tns:validarUsuario" />
+
+<xs:element name="validarUsuarioResponse" type="tns:validarUsuarioResponse" />
+
+<xs:complexType name="validarUsuario">
+<xs:sequence>
+<xs:element name="usr" type="xs:string" minOccurs="0" />
+<xs:element name="psw" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerClimaSemana">
+<xs:sequence>
+<xs:element name="idPais" type="xs:int" />
+<xs:element name="idCiudad" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerClimaSemanaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerClimaHoy">
+<xs:sequence>
+<xs:element name="idPais" type="xs:int" />
+<xs:element name="idCiudad" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerClimaHoyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerCiudades">
+<xs:sequence>
+<xs:element name="pais" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerCiudadesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerPaises">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="obtenerPaisesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
